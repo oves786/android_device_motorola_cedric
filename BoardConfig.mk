@@ -1,6 +1,6 @@
-LOCAL_PATH := device/motorola/cedric
+LOCAL_PATH := device/vivo/pd1613
 
-TARGET_BOARD_VENDOR := motorola
+TARGET_BOARD_VENDOR := vivo
 
 # Architecture
 TARGET_ARCH := arm
@@ -23,8 +23,8 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
-BOARD_MKBOOTIMG_ARGS :=  --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --kernel_offset 0x00008000 --second_offset 0x00f00000 --dt device/motorola/cedric/dt.img
-BOARD_CUSTOM_BOOTIMG_MK := device/motorola/cedric/mkbootimg.mk
+BOARD_MKBOOTIMG_ARGS :=  --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --kernel_offset 0x00008000 --second_offset 0x00f00000 --dt device/vivo/pd1613/dt.img
+BOARD_CUSTOM_BOOTIMG_MK := device/vivo/pd1613/mkbootimg.mk
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 
 # Partitions
@@ -50,7 +50,7 @@ TW_CRYPTO_USE_SYSTEM_VOLD := qseecomd
 
 # TWRP
 BOARD_SUPPRESS_SECURE_ERASE := true
-TARGET_RECOVERY_FSTAB := device/motorola/cedric/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/vivo/pd1613/twrp.fstab
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
