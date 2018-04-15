@@ -19,11 +19,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fstab.qcom:root/fstab.qcom
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := cedric
-PRODUCT_NAME := full_cedric
-PRODUCT_BRAND := Motorola
-#PRODUCT_MODEL := G5
-PRODUCT_MANUFACTURER := Motorola
+PRODUCT_DEVICE := pd1613
+PRODUCT_NAME := full_pd1613
+PRODUCT_BRAND := Vivo
+#PRODUCT_MODEL := Y55L
+PRODUCT_MANUFACTURER := Vivo
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
 ro.product.model
